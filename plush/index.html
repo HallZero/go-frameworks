@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Welcome to Plush</title>
+    </head>
+
+    <%
+        let greet = "Hi"
+    %>
+
+    <body>
+        <%= if (name == "Marek") { %>
+            
+            Hello <%= name %>
+
+        <% } else { %>
+            We don't know you!
+        <% } %>
+
+        <%= for (i, n) in names { %>
+            Hello <%= n %>
+        <% } %>
+
+        <%= json(names) %>
+
+        <%= js() %>
+
+        <%= div({class: "big", "data-id": 12345}) { %>
+            <b>Hello from our div</b>
+        <% } %>
+
+    </body>
+</html>
