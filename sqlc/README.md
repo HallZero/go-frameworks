@@ -1,0 +1,1 @@
+SQLC is a framework for writing type-safe SQL queries in Go.
